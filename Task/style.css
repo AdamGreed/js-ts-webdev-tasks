@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'DM Sans';
+    margin: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    max-width: 1070px;
+    max-height: 720px;
+    width: 100%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 42px;
+    color: #1E0E62;
+    margin: 0;
+}
+
+.header button {
+    width: 214px;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: #1E0E62;
+    border: 2px, solid, #EBEAED;
+    padding: 10px 15px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #EBEAED;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #1E0E62;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #1E0E62;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card button {
+    width: 105px;
+    height: 40px;
+    background-color: #FFFFFF;
+    color: #1E0E62;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card.blue {
+    background-color: #482BE7;
+    color: #FFFFFF;
+}
+
+.card.blue h3,
+.card.blue p {
+    color: #FFFFFF;
+}
+
+.card.blue button {
+    color: #1E0E62;
+    background-color: #FFFFFF;
+}
+
+.card.image {
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+.card.image h3,
+.card.image p {
+    color: #FFFFFF;
+}
+
+.card.blank {
+    background-color: #FFFFFF;
+    border: 2px, solid, #EBEAED;
+}
+
+.card.blank p {
+    color: #15143966;
+}
+
+.card.blank button {
+    background-color: #25DAC5;
+    color: #FFFFFF;
+}
