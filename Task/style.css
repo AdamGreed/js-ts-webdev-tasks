@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+  body {
+    font-family: 'DM Sans';
+    background-color: #fff;
+    color: #1E0E62; 
+  }
+  
+  .container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 200px;
+  }
+  
+  .sidebar ul {
+    margin-top: 60px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 12px;
+    cursor: pointer;
+    color: #15143966;
+    transition: color 0.3s;
+  }
+  
+  .sidebar li.active {
+    color: #1E0E62;
+    font-weight: bold;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-left: 40px;
+  }
+  
+  .product-card {
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .product-card img {
+    width: 270px;
+    height: 340px;
+    border-radius: 10px;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+  }
+  
+  .product-card p {
+    font-weight: bold;
+    color: #482BE7;
+  }
+  
+  .add-to-bag {
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #fff;
+    border-radius: 100px;
+    border: 2px, solid, #EBEAED;
+    color: #1E0E62;
+    cursor: pointer;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .items-count {
+    color: #15143966;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  
+  .sort-by {
+    color: #15143966;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  .sort-selected {
+    color: #1E0E62;
+    font-weight: 700;
+    cursor: pointer;
+  }
